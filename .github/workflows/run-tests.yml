@@ -28,12 +28,3 @@ jobs:
       - name: 4. Запуск всех pytest-тестов
         run: |
           pytest -v --tb=short
-
-      - name: 5. Загрузка результатов (на всякий случай)
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: pytest-results
-          path: |
-            *.xml
-            *.html

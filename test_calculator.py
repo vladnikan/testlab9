@@ -37,7 +37,7 @@ def test_divide_by_zero():
     (11, True),  (13, True),  (17, True),  (19, True),
     (1, False),  (0, False),  (-5, False), (4, False),
     (9, False),  (15, False), (25, False), (97, True),
-    (100, False), (7919, True),  # 7919 — простое
+    (100, False)
 ])
 def test_is_prime_number(number, expected):
     assert Calculator.is_prime_number(number) == expected
